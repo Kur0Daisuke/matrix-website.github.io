@@ -1923,6 +1923,7 @@ margin-top: 20px;
 	background: url(../images/bg.jpg);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
+	width: 100%;
 }
 .product-bg-white {
 	background: #ffffffbd;
@@ -1931,15 +1932,43 @@ margin-top: 20px;
 	padding-bottom: 60px;
 }
  .product-bg .product-bg-white .product-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
  	background: #ddd;
  	text-align: center;
  	margin-bottom: 30px;
  	padding: 20px 25px;
-
  }
+ .product-bg-white > .row{
+	position: absolute;
+	width: 100%;
+ }
+ .product-box {
+	position: relative;
+	width: 100%;
+	background: orange;
+	border-radius: 10px;
+ }
+.product-box > h3{
+	display: block;
+	max-width: 15vw;
+	height: 15vh;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.banner{
+	width: 150%;
+	height: 70vh;
+	background: gainsboro;
+}
  .product-bg .product-bg-white .product-box i img {width: 100%;}
  .product-bg .product-bg-white .product-box:hover {
- 	background: #fdc24f;
+ 	background: #d2c0dd;
+	transition: 0.5s;
  }
 
  .product-bg .product-bg-white .product-box  h3 {
